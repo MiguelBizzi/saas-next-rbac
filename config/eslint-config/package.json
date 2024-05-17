@@ -12,5 +12,10 @@
     "eslint-plugin-simple-import-sort": "^12.1.0",
     "@saas/prettier": "*"
   },
-  "prettier": "@saas/prettier"
+  "prettier": "@saas/prettier",
+  "eslintConfig": {
+    "extends": [
+      "./library.js"
+    ]
+  }
 }
