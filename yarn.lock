@@ -287,6 +287,7 @@
   resolved "file:apps/api"
   dependencies:
     "@fastify/cors" "^9.0.1"
+    "@fastify/jwt" "^8.0.1"
     "@fastify/swagger" "^8.15.0"
     "@fastify/swagger-ui" "^4.1.0"
     "@prisma/client" "5.18.0"
@@ -1458,7 +1459,7 @@ fastfall@^1.5.0:
   dependencies:
     reusify "^1.0.0"
 
-fastify-plugin@^4.0.0:
+fastify-plugin@^4.0.0, fastify-plugin@^4.5.1:
   version "4.5.1"
   resolved "https://registry.npmjs.org/fastify-plugin/-/fastify-plugin-4.5.1.tgz"
   integrity sha512-stRHYGeuqpEZTL1Ef0Ovr2ltazUT9g844X5z/zEBFLG8RYlpDiOCIG+ATvYEp+/zmc7sN29mcIMp8gvYplYPIQ==
