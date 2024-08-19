@@ -3,6 +3,7 @@ import { compare } from 'bcryptjs'
 import { FastifyInstance } from 'fastify'
 import type { ZodTypeProvider } from 'fastify-type-provider-zod'
 import { z } from 'zod'
+import { BadRequestError } from '../_errors/bad-request-error'
 
 export async function getProfile(app: FastifyInstance) {
   app.withTypeProvider<ZodTypeProvider>().get(
@@ -37,7 +38,7 @@ export async function getProfile(app: FastifyInstance) {
       })
 
       if (!user) {
-        throw new Error('User not found')
+        throw new BadRequestError('User not found')
       }
 
       reply.send({ user })
